@@ -1,0 +1,60 @@
+The provided code is a Python script for a simple Student Gradebook application. It utilizes dictionaries to manage student data and their scores. Below is an explanation of the code:
+
+Functionalities of functions:
+1. show_intro():
+   - This function prints a welcome message and introduces the topic of the day, which is dictionaries, and states the purpose of the app, which is to manage student scores.
+
+2. Gradebook Dictionary:
+   - gradebook = { }: Initializes an empty dictionary called gradebook where student names are keys and their scores (a list of integers) are values.
+
+3. show_menu():
+   - This function displays the menu options available in the Gradebook app. The user can choose from options to add, update, delete students, view all students, calculate averages, or to exit.
+
+4. add_student():
+   - Prompts the user to enter a student's name and their marks as a comma-separated string.
+   - Converts the input string into a list of integers and adds this data to the gradebook dictionary.
+   - Handles invalid input using a try-except block to ensure all entered marks are numbers.
+
+5. update_marks():
+   - Allows updating a student's marks if they exist in the gradebook, if not there gives error.
+   - asks for new marks and updates the student's record in the dictionary.
+   - Uses exception handling to validate that only numbers are entered.
+
+6. delete_student():
+   - Deletes a student's record from the gradebook if the student exists, else gives error.
+   - Prints confirmation of deletion or an error message if the student is not found.
+
+7. view_all():
+   - Displays all student records in the gradebook.
+   - If there are no records, it notifies the user that there are no student records yet.
+
+8. calculate_average():
+   - Calculates and prints the average marks for a specified student if they exist in the gradebook.
+   - Handles cases where no marks are present or if the student is not found.
+
+9. main():
+   - This is the main loop of the application. It shows the introduction and continuously displays the menu until the user chooses to exit.
+   - Based on user input, it calls the appropriate function to perform actions like adding, updating, deleting students, viewing all records, calculating averages, or exiting the application.
+
+10. Starting point: 
+   - The script is designed to run when executed directly. The conditional if __name__ == "__main__": main() ensures that main() is called only when the script is run as a standalone program, not when imported as a module.
+
+Key Concepts
+- Dictionaries: Used to store and manage student data efficiently with keys (student names) and values (lists of marks).
+- Exception Handling: Ensures best input processing by catching errors when converting strings to integers.
+- Functions: Modularizes code into reusable blocks for each operation (add, update, delete, view, calculate).
+- User Interaction: Uses input/output to interact with users and perform operations based on their choices.
+
+What I've learnt:
+- Dictionary: Python dictionaries are unordered collection of key-value paired, mutable and indexed by keys.
+- dictionaies are represented in { key : value }.
+- Dictionaries can store / hold any datatype like numeric, string, boolean, tuple, sets, list and nested dictionaries.
+- Dictionaries are key-value paired
+- Dictionaries are mutable means we can add, change or remove items after dictionary is created.
+- The keys must be unique and immutable (cannot be changed once created), but values can be duplicated and mutable.
+- Dictionaries are dynamic size means automatically resizes as we add / remove elements.
+- So, finally dictionaies are useful for; ast data access, highly flexible, dynamic and mutable, won't allows duplicate keys,
+  useful for counting / grouping data
+  supports mathematical set operations (i.e difference, union, intersection) and useful for deduplication (eliminates the repeated entries from sequences).
+- Some disadvantages of dictionaies are; more memory usage (due to it stores in key-value pairs along with hashing info), no diect indexing and 
+  slower for small data sets.
